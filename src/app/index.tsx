@@ -2,7 +2,7 @@ import { Text, View, ScrollView } from "react-native";
 import { Header } from "../components/header";
 import Constants from "expo-constants";
 
-const statusBarHeight = Constants.statusBarHeight
+const Responsividade = Constants.statusBarHeight
 export default function Index() {
   return (
     <ScrollView
@@ -10,7 +10,7 @@ export default function Index() {
       className="bg-slate-200"
       showsHorizontalScrollIndicator={false}
     >
-      <View className="w-full mt-10" style={{marginTop: statusBarHeight + 8}}>
+      <View className="px-4 w-full mt-10" style={{marginTop: Responsividade + 8}}>
         <Header />
       </View>
     </ScrollView>

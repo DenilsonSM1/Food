@@ -3,9 +3,22 @@ import { Ionicons, Feather } from "@expo/vector-icons";
 
 export function Header() {
   return (
-    <View>
-      <Pressable>
+    <View className="w-full items-center justify-between flex flex-row">
+      <Pressable className="w-10 h-10 bg-white rounded-full flex justify-center items-center">
         <Ionicons name="menu-outline" size={30} color={"#121212"} />
+      </Pressable>
+
+      <View className="flex flex-col items-center justify-center">
+        <Text className="text-center text-sm text-slate-800">Localização</Text>
+
+        <View className="flex-row items-center justify-center gap-1">
+          <Ionicons name="location-outline" size={14} color={"red"} />
+          <Text className="text-lg font-bold">Pernambuco</Text>
+        </View>
+      </View>
+
+      <Pressable className="w-10 h-10 bg-white rounded-full flex justify-center items-center">
+        <Ionicons name="notifications-outline" size={30} color={"#121212"} />
       </Pressable>
     </View>
   );
